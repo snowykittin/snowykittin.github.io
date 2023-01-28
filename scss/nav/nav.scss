@@ -1,0 +1,83 @@
+nav{
+    width: 15vw;
+    display: block;
+    height: 100vh;
+    position: fixed;
+    overflow: auto;
+    z-index: 20;
+    background-color: $lavender;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .nav-header{
+        margin-top: 5vh;
+        text-align: center;
+        font-family: 'Lobster Two', cursive;
+
+        h4{
+            font-family: 'Maven Pro', serif;
+            font-size: small;
+            margin-bottom: 0px;
+        }
+        h1{
+            font-size: xx-large;
+            font-weight: 500;
+            text-decoration: underline;
+            text-decoration-color: $black;
+            text-underline-offset: 6px;
+            color: $beige;
+            margin-bottom: 0px;
+        }
+        h2{
+            font-weight: 500;
+            color: $silver;
+        }
+    }
+
+    .links{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 30vh;
+        width: 100%;
+        text-align: center;
+
+        a{
+            text-decoration: none;
+            color: $black;
+            font-size: large;
+            font-family: 'Maven Pro', serif;
+            padding: 20px;
+        }
+
+        .active, a:active{
+            width: 100%;
+            background-color: $pink;
+        }
+
+        a:hover{
+            width: 100%;
+            background-color: $dark-purple;
+        }
+    }
+
+    .nav-footer{
+        margin-top: 25vh;
+        font-family: 'Maven Pro', serif;
+        font-size: small;
+
+        .social{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            
+            img{
+                height: 40px;
+            }
+        }
+    }
+}
