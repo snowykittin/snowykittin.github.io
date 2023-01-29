@@ -85,6 +85,7 @@ nav .links a {
 nav .links .active, nav .links a:active {
   width: 100%;
   background-color: #A6808C;
+  font-weight: 500;
 }
 nav .links a:hover {
   width: 100%;

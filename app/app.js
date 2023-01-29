@@ -53,6 +53,8 @@ function welcomeType(){
 }
 
 
+
+
 $(document).ready(function(){
     welcomeType();
     addBalls();
