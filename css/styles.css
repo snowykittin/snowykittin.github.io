@@ -142,4 +142,11 @@ nav .nav-footer .social img {
   overflow: hidden;
 }
 
+.projects {
+  width: 100%;
+}
+.projects h1 {
+  font-family: "Maven Pro", serif;
+}
+
 /*# sourceMappingURL=styles.css.map */
