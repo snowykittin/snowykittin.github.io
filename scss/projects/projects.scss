@@ -1,7 +1,34 @@
 .projects{
-    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
 
     h1{
-        font-family: 'Maven Pro', serif;
+        font-family: 'Lobster Two', cursive;
+        color: $pink;
+    }
+
+    .project-group{
+        width: 80%;
+        margin: auto;
+        padding: 20px 0px;
+
+        .project{
+            padding: 20px 0px;
+
+            .project-text{
+                h2{
+                    font-family: 'Maven Pro', serif;
+                    color: $dark-purple;
+                }
+                p{
+                    font-family: 'Lora', serif;
+                }
+                a{
+                    text-decoration: none;
+                    font-family: 'Lora', serif;
+                    color: $pink;
+                }
+            }
+        }
     }
 }

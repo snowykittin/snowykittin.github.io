@@ -15,8 +15,8 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 #app {
-  width: 85vw;
-  margin-left: 15vw;
+  width: 85%;
+  margin-left: 15%;
 }
 
 @font-face {
@@ -143,10 +143,32 @@ nav .nav-footer .social img {
 }
 
 .projects {
-  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
 }
 .projects h1 {
+  font-family: "Lobster Two", cursive;
+  color: #A6808C;
+}
+.projects .project-group {
+  width: 80%;
+  margin: auto;
+  padding: 20px 0px;
+}
+.projects .project-group .project {
+  padding: 20px 0px;
+}
+.projects .project-group .project .project-text h2 {
   font-family: "Maven Pro", serif;
+  color: #565264;
+}
+.projects .project-group .project .project-text p {
+  font-family: "Lora", serif;
+}
+.projects .project-group .project .project-text a {
+  text-decoration: none;
+  font-family: "Lora", serif;
+  color: #A6808C;
 }
 
 /*# sourceMappingURL=styles.css.map */
