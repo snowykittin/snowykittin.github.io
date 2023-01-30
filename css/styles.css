@@ -142,6 +142,43 @@ nav .nav-footer .social img {
   overflow: hidden;
 }
 
+.about {
+  min-height: 100vh;
+  background-image: linear-gradient(to right, #706677, #D6CFCB);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about .about-img {
+  width: 300px;
+  height: 300px;
+  border: solid 5px #A6808C;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 20px;
+}
+.about .about-img img {
+  width: 100%;
+}
+.about .about-blurb {
+  background-color: #D6CFCB;
+  padding: 100px;
+  border-color: none;
+  border-radius: 50px;
+  width: 60%;
+}
+.about .about-blurb h1 {
+  font-family: "Lobster Two", cursive;
+  color: #A6808C;
+}
+.about .about-blurb p {
+  font-family: "Lora", serif;
+}
+.about .about-blurb p .fact {
+  color: #A6808C;
+  font-family: "Lora", serif;
+}
+
 .projects {
   height: 100vh;
   overflow-y: scroll;
@@ -169,6 +206,42 @@ nav .nav-footer .social img {
   text-decoration: none;
   font-family: "Lora", serif;
   color: #A6808C;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Maven Pro", serif;
+}
+.contact .content {
+  margin: 50px 0px;
+  text-align: center;
+}
+.contact .content h1 {
+  font-family: "Lobster Two", cursive;
+  color: #A6808C;
+}
+.contact .content h3 {
+  font-weight: normal;
+}
+.contact .contact-options {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.contact .contact-options button {
+  border: none;
+  background-color: #706677;
+  padding: 20px 15px;
+  border-radius: 20px;
+}
+.contact .contact-options button a {
+  text-decoration: none;
+  color: #D6CFCB;
+  font-size: large;
 }
 
 /*# sourceMappingURL=styles.css.map */

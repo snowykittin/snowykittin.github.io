@@ -1,0 +1,42 @@
+.about{
+    min-height: 100vh;
+    background-image: linear-gradient(to right, $lavender, $silver);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    .about-img{
+        width: 300px;
+        height: 300px;
+        border: solid 5px $pink;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 20px;
+
+        img{
+            width: 100%;
+        }
+    }
+    .about-blurb{
+        background-color: $silver;
+        padding: 100px;
+        border-color: none;
+        border-radius: 50px;
+        width: 60%;
+
+        h1{
+            font-family: 'Lobster Two', cursive;
+            color: $pink;
+        }
+    
+        p{
+            font-family: 'Lora', serif;
+    
+            .fact{
+                color: $pink;
+                font-family: 'Lora', serif;
+            }
+        }
+    }
+}
