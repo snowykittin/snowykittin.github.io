@@ -7,7 +7,7 @@
 
 html, body {
   height: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -110,7 +110,13 @@ nav .nav-footer .social img {
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  position: relative;
   background-image: linear-gradient(to right, #706677, #161117);
+  --mask:
+  radial-gradient(11.18vw at 50% calc(100% - 15.00vw),#000 99%,#0000 101%) calc(50% - 10vw) 0/20vw 100%,
+  radial-gradient(11.18vw at 50% calc(100% + 10.00vw),#0000 99%,#000 101%) 50% calc(100% - 5vw)/20vw 100% repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
 }
 .welcome .text {
   z-index: 20;
@@ -144,7 +150,7 @@ nav .nav-footer .social img {
 
 .about {
   min-height: 100vh;
-  background-image: linear-gradient(to right, #706677, #D6CFCB);
+  background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -47,9 +47,9 @@ balls.forEach((el, i, ra) => {
 
 function welcomeType(){
    //run welcome type first
-    $("#heading").fadeIn(1000);
+    $("#heading").fadeIn(1500);
    //then load in the "about"
-    $("#about").fadeIn(1500);
+    $("#about").fadeIn(2000);
 }
 
 

@@ -2,7 +2,15 @@
     width: 100%;
     height: 100vh;
     overflow: hidden;
+    position: relative;
     background-image: linear-gradient(to right, $lavender, #161117);
+
+    // wavy
+    --mask:
+    radial-gradient(11.18vw at 50% calc(100% - 15.00vw),#000 99%,#0000 101%) calc(50% - 10vw) 0/20vw 100%,
+    radial-gradient(11.18vw at 50% calc(100% + 10.00vw),#0000 99%,#000 101%) 50% calc(100% - 5vw)/20vw 100% repeat-x;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
 
     .text{
         z-index: 20;
