@@ -6,7 +6,7 @@
 }
 
 html, body {
-  height: 100%;
+  min-height: 100%;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
@@ -150,7 +150,7 @@ nav .nav-footer .social img {
 }
 
 .about {
-  min-height: 100vh;
+  min-height: 50vh;
   background-color: #fff;
   display: flex;
   align-items: center;
@@ -187,12 +187,63 @@ nav .nav-footer .social img {
 }
 
 .projects {
-  height: 100vh;
-  overflow-y: scroll;
+  min-height: 500px;
 }
 .projects h1 {
   font-family: "Lobster Two", cursive;
   color: #A6808C;
+  text-align: center;
+}
+.projects .projects-grid {
+  width: 70%;
+  min-height: 500px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.projects .projects-grid .project {
+  width: 25%;
+  height: 400px;
+  background-color: rgb(182, 182, 182);
+  border-color: none;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  margin: 25px;
+  padding: 10px;
+}
+.projects .projects-grid .project h2 {
+  font-family: "Maven Pro", serif;
+  color: #565264;
+}
+.projects .projects-grid .project p {
+  font-family: "Lora", serif;
+}
+.projects .projects-grid .project a {
+  text-decoration: none;
+  color: #565264;
+  font-family: "Lora", serif;
+}
+.projects .view-more {
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.projects .view-more a button {
+  border: none;
+  background-color: #706677;
+  padding: 20px 15px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #D6CFCB;
+  font-size: large;
+  cursor: pointer;
 }
 .projects .project-group {
   width: 80%;
@@ -215,7 +266,23 @@ nav .nav-footer .social img {
   color: #A6808C;
 }
 
+#projects {
+  background-color: rgb(230, 230, 230);
+  padding: 20vh 0em;
+  --mask:
+  radial-gradient(22.36vh at 50% 30.00vh,#000 99%,#0000 101%) calc(50% - 20vh) 0/40vh 51% repeat-x,
+  radial-gradient(22.36vh at 50% -20vh,#0000 99%,#000 101%) 50% 10vh/40vh calc(51% - 10vh) repeat-x,
+  radial-gradient(22.36vh at 50% calc(100% - 30.00vh),#000 99%,#0000 101%) calc(50% - 20vh) 100%/40vh 51% repeat-x,
+  radial-gradient(22.36vh at 50% calc(100% + 20.00vh),#0000 99%,#000 101%) 50% calc(100% - 10vh)/40vh calc(51% - 10vh) repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+}
+#projects h1 {
+  font-size: 56px;
+}
+
 .contact {
+  height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;

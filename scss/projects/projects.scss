@@ -1,12 +1,75 @@
 .projects{
-    height: 100vh;
-    overflow-y: scroll;
+    min-height: 500px;
 
     h1{
         font-family: 'Lobster Two', cursive;
         color: $pink;
+        text-align: center;
     }
 
+    //for home page
+    .projects-grid{
+        width: 70%;
+        min-height: 500px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .project{
+            width: 25%;
+            height: 400px;
+            background-color: rgb(182, 182, 182);
+            border-color: none;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            text-align: center;
+            margin: 25px;
+            padding: 10px;
+
+            h2{
+                font-family: 'Maven Pro', serif;
+                color: $dark-purple;
+            }
+
+            p{
+                
+                font-family: 'Lora', serif;
+            }
+
+            a{
+                text-decoration: none;
+                color: $dark-purple;
+                font-family: 'Lora', serif;
+            }
+        }
+    }
+
+    .view-more{
+        width: 100%;
+        margin-top: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+         
+        a{
+            button{
+            border: none;
+            background-color: $lavender;
+            padding: 20px 15px;
+            border-radius: 20px;
+            text-decoration: none;
+            color: $silver;
+            font-size: large;
+            cursor: pointer;
+            }
+        }
+    }
+
+    //for expanded page
     .project-group{
         width: 80%;
         margin: auto;
@@ -30,5 +93,21 @@
                 }
             }
         }
+    }
+}
+
+#projects{
+    background-color: rgb(230, 230, 230);
+    padding: 20vh 0em;
+    --mask:
+    radial-gradient(22.36vh at 50% 30.00vh,#000 99%,#0000 101%) calc(50% - 20vh) 0/40vh 51% repeat-x,
+    radial-gradient(22.36vh at 50% -20vh,#0000 99%,#000 101%) 50% 10vh/40vh calc(51% - 10vh) repeat-x,
+    radial-gradient(22.36vh at 50% calc(100% - 30.00vh),#000 99%,#0000 101%) calc(50% - 20vh) 100%/40vh 51% repeat-x,
+    radial-gradient(22.36vh at 50% calc(100% + 20.00vh),#0000 99%,#000 101%) 50% calc(100% - 10vh)/40vh calc(51% - 10vh) repeat-x;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+
+    h1{
+        font-size: 56px;
     }
 }
