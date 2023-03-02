@@ -18,7 +18,7 @@
         flex-wrap: wrap;
 
         .project{
-            width: 30%;
+            width: 40%;
             height: 400px;
             background-color: rgb(182, 182, 182);
             border-color: none;
@@ -109,5 +109,21 @@
 
     h1{
         font-size: 56px;
+    }
+}
+
+@media screen and (max-width: 770px){
+    .projects{
+
+        .projects-grid{
+            width: 60%;
+            flex-direction: column;
+
+            .project{
+                width: 100%;
+                margin: 0px;
+                margin-bottom: 25px;
+            }
+        }
     }
 }

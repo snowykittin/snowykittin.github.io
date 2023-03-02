@@ -230,8 +230,6 @@ nav .nav-footer .social img {
 }
 .about .about-blurb {
   padding: 100px;
-  border-color: none;
-  border-radius: 50px;
   width: 60%;
 }
 .about .about-blurb h1 {
@@ -249,9 +247,12 @@ nav .nav-footer .social img {
 @media screen and (max-width: 770px) {
   .about {
     flex-direction: column-reverse;
+    width: 95%;
   }
   .about .about-blurb {
     width: 100%;
+    padding: 0px;
+    padding-top: 100px;
   }
 }
 .projects {
@@ -272,7 +273,7 @@ nav .nav-footer .social img {
   flex-wrap: wrap;
 }
 .projects .projects-grid .project {
-  width: 30%;
+  width: 40%;
   height: 400px;
   background-color: rgb(182, 182, 182);
   border-color: none;
@@ -349,6 +350,17 @@ nav .nav-footer .social img {
   font-size: 56px;
 }
 
+@media screen and (max-width: 770px) {
+  .projects .projects-grid {
+    width: 60%;
+    flex-direction: column;
+  }
+  .projects .projects-grid .project {
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 25px;
+  }
+}
 .contact {
   height: 50vh;
   display: flex;
