@@ -40,3 +40,16 @@
         }
     }
 }
+
+@media screen and (max-width: 770px){
+    .contact{
+        .contact-options{
+            width: 80%;
+            flex-direction: column;
+
+            button{
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

@@ -408,4 +408,14 @@ nav .nav-footer .social img {
   font-size: large;
 }
 
+@media screen and (max-width: 770px) {
+  .contact .contact-options {
+    width: 80%;
+    flex-direction: column;
+  }
+  .contact .contact-options button {
+    margin-bottom: 20px;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
