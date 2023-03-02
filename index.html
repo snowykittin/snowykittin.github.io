@@ -10,7 +10,10 @@
 </head>
 
 <body>
-    <nav>
+    <nav id="nav">
+        <div class="mobile-toggle">
+            <span onclick="navToggle()">X</span>
+        </div>
         <div class="nav-header">
             <h4>FULL STACK DEVELOPER</h4>
             <h1>Summer Sexton</h1>
@@ -35,6 +38,9 @@
     </nav>
 
     <div id="app">
+        <div class="mobile-menu">
+            <img src="images/icons8-menu-40.png" alt="Mobile Menu" onclick="navToggle()">
+        </div>
         <!-- MAIN CONTENT HERE -->
         <div class="welcome" id="intro">
             <div class="text">
@@ -49,22 +55,23 @@
         </div>
 
         <div class="about" id="about">
-            <div class="about-text">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur eveniet repudiandae sunt veniam
-                    necessitatibus, odit accusamus iusto accusantium aut mollitia. Voluptatem quis, veniam adipisci sint
-                    rerum aperiam repudiandae quos ea!</p>
-                <p>Debitis, autem nisi. Minus, dolorem inventore. Suscipit ipsum voluptates, dicta vero hic eius natus
-                    culpa maiores perspiciatis. Incidunt corporis vitae, molestias dolor rerum veniam deserunt maxime
-                    voluptatem natus sapiente nobis.</p>
-                <p>Qui iure ut natus distinctio, reiciendis laborum. Enim accusamus ratione dolores veritatis reiciendis
-                    quos dolore voluptatem perspiciatis. Optio, animi placeat. Cupiditate blanditiis expedita maxime rem
-                    nemo vitae facilis deleniti mollitia?</p>
-                <p>Omnis debitis est, et nisi ullam esse dignissimos hic officiis itaque, magnam necessitatibus cum
-                    error ipsa, sed quo dolor magni odio rem? Labore aliquid officiis ratione quod dolorem, delectus
-                    aliquam.</p>
-                <p>Maiores ipsa consequuntur ipsam ullam dicta nesciunt, vel possimus quibusdam nisi unde. Totam esse
-                    quia sunt minus quasi sequi quisquam mollitia dolores, magni at dicta, ducimus placeat ratione
-                    consequatur vitae.</p>
+            <div class="about-blurb">
+                <!-- Replace H2 with changing text between various titles. Developer, Soon-to-be Wife, Violinist, Cat lover, Coffee Enthusiast, etc. -->
+                <h1>Developer. Cat lover. Coffee Enthusiast.</h1>
+                <p>My name is <span class="fact">Summer</span>, but you may see me online under the alias <span
+                        class="fact">snowykittin</span>.</p>
+                <p>
+                    I've been programming as long as I've been able to be on the internet. It started with simple HTML
+                    templates, and was a passion that simply expanded from there. Because of my passion, I am a
+                    back-to-back NCWiT
+                    National
+                    Honorable Mention and Indiana Affiliate Winner. I'm also a community manager,
+                    moderating
+                    Discord communities on the side.</p>
+                <p><span class="fact">Fun Fact:</span> I'm one of those weirdos who like PHP.</p>
+            </div>
+            <div class="about-img">
+                <img src="images/self.png" alt="Summer Sexton">
             </div>
         </div>
 

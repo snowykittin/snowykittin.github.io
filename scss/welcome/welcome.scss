@@ -15,20 +15,21 @@
     .text{
         z-index: 20;
         text-align: right;
-        margin-right: 2vw;
-        margin-top: 15vh;
+        position: absolute;
+        top: 25%;
+        right: 2%;
 
         #heading,#about{
             display: none;
         }
         h1{
             font-family: 'Lobster Two', cursive;
-            font-size: 15em;
+            font-size: 13vw;
             color: $pink;
         }
         p{
             font-family: 'Lato', serif;
-            font-size: 2em;
+            font-size: 2vw;
             color: $silver;
             .name{
                 font-family: 'Lobster Two', cursive;
@@ -47,3 +48,17 @@
       }
 }
 
+@media screen and (max-width: 770px){
+    .welcome{
+        height: 70vh;
+        .text{
+            top: 20%;
+            h1{
+                font-size: 20vw;
+            }
+            p{
+                font-size: 5vw;
+            }
+        }
+    }
+}

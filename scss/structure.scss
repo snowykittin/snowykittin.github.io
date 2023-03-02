@@ -15,4 +15,28 @@ h1, h2, h3, h4, h5, h6, p {
 #app{
     width: 85%;
     margin-left: 15%;
+
+    .mobile-menu{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 770px){
+    #app{
+        width: 100%;
+        margin-left: 0%;
+        position: relative;
+
+        .mobile-menu{
+            display: block;
+            position: absolute;
+            z-index: 15;
+            top: 5px;
+            left: 10px;
+
+            #menu-toggle{
+                width: 30px;
+            }
+        }
+    }
 }

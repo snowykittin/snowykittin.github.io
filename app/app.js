@@ -52,7 +52,10 @@ function welcomeType(){
     $("#about").fadeIn(2000);
 }
 
-
+function navToggle(){
+  var nav = document.getElementById("nav");
+  nav.classList.toggle("visible");
+}
 
 
 $(document).ready(function(){

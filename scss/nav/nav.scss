@@ -1,6 +1,5 @@
 nav{
     width: 15vw;
-    display: block;
     height: 100vh;
     position: fixed;
     overflow: auto;
@@ -11,6 +10,11 @@ nav{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+
+    .mobile-toggle{
+        display: none;
+        position: relative;
+    }
 
     .nav-header{
         margin-top: 5vh;
@@ -44,6 +48,7 @@ nav{
         height: 30vh;
         width: 100%;
         text-align: center;
+        margin-bottom: 50%;
 
         a{
             text-decoration: none;
@@ -66,9 +71,9 @@ nav{
     }
 
     .nav-footer{
-        margin-top: 25vh;
         font-family: 'Maven Pro', serif;
         font-size: small;
+        text-align: center;
 
         .social{
             width: 100%;
@@ -78,6 +83,31 @@ nav{
             
             img{
                 height: 40px;
+            }
+        }
+    }
+}
+
+//CLASS FOR JAVASCRIPT
+.visible{
+    display: flex;
+}
+
+@media screen and (max-width: 770px){
+    nav{
+        display: none;
+        width: 300px;
+
+        .mobile-toggle{
+            display: block;
+            position: absolute;
+            top: 2px;
+            right: 4px;
+
+            span{
+                font-size: 35px;
+                color: $dark-purple;
+                font-family: 'Maven Pro', serif;
             }
         }
     }

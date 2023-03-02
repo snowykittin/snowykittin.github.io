@@ -1,5 +1,7 @@
 .about{
     min-height: 50vh;
+    width: 80%;
+    margin: auto;
     // background-image: linear-gradient(to right, $lavender, $silver);
     background-color: $white;
 
@@ -13,14 +15,12 @@
         border: solid 5px $pink;
         border-radius: 50%;
         overflow: hidden;
-        margin-right: 20px;
 
         img{
             width: 100%;
         }
     }
     .about-blurb{
-        background-color: $silver;
         padding: 100px;
         border-color: none;
         border-radius: 50px;
@@ -38,6 +38,15 @@
                 color: $pink;
                 font-family: 'Lora', serif;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 770px){
+    .about{
+        flex-direction: column-reverse;
+        .about-blurb{
+            width: 100%;
         }
     }
 }
